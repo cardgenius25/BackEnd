@@ -2,8 +2,8 @@
 Backend for Card Genius
 
 ## Prerequisites
-[Python 3.13](https://www.python.org/downloads/)
-[uv](https://docs.astral.sh/uv/getting-started/installation/)
+- [Python 3.13](https://www.python.org/downloads/)
+- [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 ## To install:
 [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this repository
