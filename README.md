@@ -18,7 +18,5 @@ Backend for Card Genius
 2. Start the ollama server: `ollama serve`
 3. In a separate terminal, get the llama3.2 model (recommended because relatively lightweight): `ollama fetch llama3.2`
 4. Run agent.py: `uv run python src/card_genius/agent.py`
-5. If all goes well you should see the following output: ```
-city='London' country='United Kingdom'
-Usage(requests=1, request_tokens=176, response_tokens=21, total_tokens=197, details=None)
-```
+5. If all goes well you should see the following output:```city='London' country='United Kingdom'
+Usage(requests=1, request_tokens=176, response_tokens=21, total_tokens=197, details=None)```
