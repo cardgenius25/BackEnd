@@ -1,0 +1,16 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Backend for the Card Genius project"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.115.11",
+    "pydantic-ai>=0.0.42",
+    "sqlmodel>=0.0.24",
+]
+
+[dependency-groups]
+dev = [
+    "ollama>=0.4.7",
+]
