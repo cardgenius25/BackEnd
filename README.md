@@ -15,7 +15,7 @@ This is the backend for the Card Genius app, built using FastAPI.
 2. Get the most recent changes from Github: `git pull`
 3. Don't work on the main branch. You can use the dev branch or create a specific branch for the feature you are working on: `git checkout dev` or `git checkout -b $BRANCH_NAME`
 
-### To get new changes into your branch
+### BEFORE YOU MAKE CHANGES - Get the latest version of main and merge it into your branch!
 (These instructions assume you're working on the "dev" branch)
 1. Switch to main: `git checkout main`
 2. Get the most recent version of main: `git pull`

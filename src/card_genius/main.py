@@ -1,8 +1,9 @@
 from fastapi import FastAPI
 from sqlmodel import Session, SQLModel, create_engine, select
 
-from models import Contact
+from .models import Contact
 
+# Database setup
 sqlite_file_name = "database.db"
 sqlite_url = f"sqlite:///{sqlite_file_name}"
 
@@ -22,6 +23,7 @@ def on_startup():
 @app.get("/")
 async def root():
     return {"message": "Hello World"}
+
 
 @app.post("/contacts/")
 def create_contact(contact: Contact):
