@@ -1,5 +1,3 @@
-
-
 from fastapi import FastAPI
 from sqlmodel import Field, Session, SQLModel, create_engine, select
 
