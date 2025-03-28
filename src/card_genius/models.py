@@ -1,5 +1,4 @@
-from fastapi import FastAPI
-from sqlmodel import Field, Session, SQLModel, create_engine, select
+from sqlmodel import Field, SQLModel
 
 class Contact(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
@@ -9,16 +8,3 @@ class Contact(SQLModel, table=True):
     phone: str
     email: str
 
-
-app = FastAPI()
-
-
-
-
-@app.post("/contacts/")
-def create_contact(contact: Contact):
-    with Session(engine) as session:
-        session.add(contact)
-        session.commit()
-        session.refresh(contact)
-        return contact
